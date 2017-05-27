@@ -1,0 +1,14 @@
+body{
+	color: #7fff00;
+	background: #191919;
+	font-family: 'Source Code Pro', Arial;
+	font-size: 14px;
+}
+
+.clearBoth{
+	clear: both;
+}
+
+div{
+	text-align: center;
+}
