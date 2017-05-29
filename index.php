@@ -9,11 +9,9 @@
   <noscript><style>.jsonly{ display: none }</style></noscript>  
 </head>
 <body>
-  <div>
-    <h1>Hello world!</h1>
-    <img src="images/hyperCube.gif" alt="hyperCube">
-    <p>Work in Progress</p>
-  </div>
+  <?php include("views/header/header.php") ?>
+  
+  <?php include("views/footer/footer.php") ?>
   <!-- scripts -->
   <script type="text/javascript" src="scripts/main.js"></script>
 </body>
