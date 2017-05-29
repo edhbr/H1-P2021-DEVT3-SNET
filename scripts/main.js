@@ -15,4 +15,5 @@ burger.on(
 		burger.toggleClass("is-active");
 		nav.toggleClass("is-active");
 		$(".subMenuToggle").removeClass("subMenuToggle");
+		$(".toggled").removeClass("toggled");
 });
