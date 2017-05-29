@@ -1,14 +1,16 @@
+@import "_config.scss";
+
+@import "header/_headerMain.scss";
+@import "footer/_footerMain.scss";
+
 body{
-	color: #7fff00;
-	background: #191919;
-	font-family: 'Source Code Pro', Arial;
-	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	background: #555555;
+	color: $textColor;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .clearBoth{
 	clear: both;
-}
-
-div{
-	text-align: center;
 }

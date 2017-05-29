@@ -1,0 +1,105 @@
+header#header{
+	background: #ffffff;
+	text-transform: uppercase;
+
+	a#logo{
+		padding: 20px 50px;
+		display: inline-block;
+		text-decoration: none;
+		color: $blue;
+
+		img{
+			width: 150px;
+			vertical-align: bottom;
+		}
+
+		div.logoTitle{
+			padding: 5px;
+			display: inline-block;
+			font-family: 'Libre Baskerville', serif;
+			font-size: 25px;
+			letter-spacing: 2px;
+
+			div{
+				padding: 2px;
+				border-top: 2px solid $blue;
+				font-size: 12px;
+				text-align: center;
+				letter-spacing: 5px;
+			}
+		}
+
+		@media screen and (max-width: 720px) {	
+			padding: 10px 25px;
+
+			img{
+				width: 75px;
+			}
+
+			div.logoTitle{
+				font-size: 15px;
+
+				div{
+					font-size: 7px;
+				}
+			}
+		}
+	}
+
+	nav#navHeader{
+		width: 50%;
+		margin-top: 30px;
+		float: right;
+		a{
+			text-decoration: none;
+			color: $textColor;
+		}
+
+		ul{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		&>ul{
+
+			.home.navItem0{
+				background: $yellow;
+				&:hover{
+					margin-left: -20px !important;
+				}
+			}
+			.services.navItem1{
+				background: $lightBlue;
+				margin-left: $stepX*1;
+				margin-top: $stepY;
+				&:hover{
+					margin-left: $stepX*1-20 !important;
+				}
+			}
+			.contact.navItem2{
+				background: $blue;
+				a{color: #ffffff;}
+				margin-left: $stepX*2;
+				margin-top: $stepY;
+				&:hover{
+					margin-left: $stepX*2-20 !important;
+				}
+			}
+
+			li{
+				transition: 300ms ease;
+				a{
+					display: block;
+					height: inherit;
+					width: inherit;
+					padding: 10px 30px;
+				}
+
+				ul{
+					display: none;
+				}
+			}
+		}
+	}
+}

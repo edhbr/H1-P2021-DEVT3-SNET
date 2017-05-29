@@ -1,14 +1,107 @@
-body{
-	color: #7fff00;
-	background: #191919;
-	font-family: 'Source Code Pro', Arial;
-	font-size: 14px;
+header#header {
+  background: #ffffff;
+  text-transform: uppercase;
+}
+header#header a#logo {
+  padding: 20px 50px;
+  display: inline-block;
+  text-decoration: none;
+  color: #16559f;
+}
+header#header a#logo img {
+  width: 150px;
+  vertical-align: bottom;
+}
+header#header a#logo div.logoTitle {
+  padding: 5px;
+  display: inline-block;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+header#header a#logo div.logoTitle div {
+  padding: 2px;
+  border-top: 2px solid #16559f;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 5px;
+}
+@media screen and (max-width: 720px) {
+  header#header a#logo {
+    padding: 10px 25px;
+  }
+  header#header a#logo img {
+    width: 75px;
+  }
+  header#header a#logo div.logoTitle {
+    font-size: 15px;
+  }
+  header#header a#logo div.logoTitle div {
+    font-size: 7px;
+  }
+}
+header#header nav#navHeader {
+  width: 50%;
+  margin-top: 30px;
+  float: right;
+}
+header#header nav#navHeader a {
+  text-decoration: none;
+  color: #212121;
+}
+header#header nav#navHeader ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+header#header nav#navHeader > ul .home.navItem0 {
+  background: #f8be52;
+}
+header#header nav#navHeader > ul .home.navItem0:hover {
+  margin-left: -20px !important;
+}
+header#header nav#navHeader > ul .services.navItem1 {
+  background: #8a97c6;
+  margin-left: 150px;
+  margin-top: -30px;
+}
+header#header nav#navHeader > ul .services.navItem1:hover {
+  margin-left: 130px !important;
+}
+header#header nav#navHeader > ul .contact.navItem2 {
+  background: #16559f;
+  margin-left: 300px;
+  margin-top: -30px;
+}
+header#header nav#navHeader > ul .contact.navItem2 a {
+  color: #ffffff;
+}
+header#header nav#navHeader > ul .contact.navItem2:hover {
+  margin-left: 280px !important;
+}
+header#header nav#navHeader > ul li {
+  transition: 300ms ease;
+}
+header#header nav#navHeader > ul li a {
+  display: block;
+  height: inherit;
+  width: inherit;
+  padding: 10px 30px;
+}
+header#header nav#navHeader > ul li ul {
+  display: none;
 }
 
-.clearBoth{
-	clear: both;
+body {
+  margin: 0;
+  padding: 0;
+  background: #555555;
+  color: #212121;
+  font-family: 'Open Sans', sans-serif;
 }
 
-div{
-	text-align: center;
+.clearBoth {
+  clear: both;
 }
+
+/*# sourceMappingURL=style.css.map */
