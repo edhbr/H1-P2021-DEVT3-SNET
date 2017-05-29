@@ -1,28 +1,252 @@
+header#header {
+  background: #ffffff;
+  text-transform: uppercase;
+  height: 120px;
+  position: relative;
+}
+@media screen and (max-width: 920px) {
+  header#header {
+    height: 60px;
+  }
+}
+header#header a#logo {
+  padding: 20px 50px;
+  display: inline-block;
+  text-decoration: none;
+  color: #16559f;
+}
+header#header a#logo img {
+  width: 150px;
+  vertical-align: bottom;
+}
+header#header a#logo div.logoTitle {
+  padding: 5px;
+  display: inline-block;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+header#header a#logo div.logoTitle div {
+  padding: 2px;
+  border-top: 2px solid #16559f;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 5px;
+}
+@media screen and (max-width: 920px) {
+  header#header a#logo {
+    padding: 10px 25px;
+  }
+  header#header a#logo img {
+    width: 75px;
+  }
+  header#header a#logo div.logoTitle {
+    font-size: 15px;
+  }
+  header#header a#logo div.logoTitle div {
+    font-size: 7px;
+  }
+}
+header#header nav#navHeader {
+  width: 50%;
+  margin-top: 30px;
+  float: right;
+}
+header#header nav#navHeader a {
+  text-decoration: none;
+  color: #212121;
+}
+header#header nav#navHeader .aLike {
+  cursor: pointer;
+}
+header#header nav#navHeader ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+header#header nav#navHeader > ul .home.navItem0 {
+  background: #f8be52;
+}
+header#header nav#navHeader > ul .home.navItem0:hover {
+  margin-left: -20px;
+}
+header#header nav#navHeader > ul .services.navItem1 {
+  background: #8a97c6;
+  margin-left: 150px;
+  margin-top: -30px;
+}
+header#header nav#navHeader > ul .services.navItem1:hover {
+  margin-left: 130px;
+}
+header#header nav#navHeader > ul .contact.navItem2 {
+  background: #16559f;
+  margin-left: 300px;
+  margin-top: -30px;
+}
+header#header nav#navHeader > ul .contact.navItem2 a {
+  color: #ffffff;
+}
+header#header nav#navHeader > ul .contact.navItem2:hover {
+  margin-left: 280px;
+}
+header#header nav#navHeader > ul li {
+  transition: 300ms ease;
+}
+header#header nav#navHeader > ul li a, header#header nav#navHeader > ul li .aLike {
+  display: block;
+  height: inherit;
+  width: inherit;
+  padding: 10px 30px;
+  font-size: 16px;
+}
+header#header nav#navHeader > ul li .subMenuToggle {
+  display: block !important;
+}
+header#header nav#navHeader > ul li ul {
+  display: none;
+  border-top: thin solid #212121;
+  width: 100vw;
+  background: #ffffff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  text-align: center;
+}
+header#header nav#navHeader > ul li ul li {
+  display: inline-block;
+}
+header#header nav#navHeader > ul li ul li a {
+  display: inherit;
+  padding: 15px 25px;
+  font-size: 12px;
+}
+header#header nav#navHeader > ul li ul li a:hover {
+  text-decoration: underline;
+}
+header#header nav#navHeader .hamburger {
+  display: none;
+}
+@media screen and (max-width: 920px) {
+  header#header nav#navHeader .hamburger {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+  header#header nav#navHeader .hamburger .hamburger-inner, header#header nav#navHeader .hamburger .hamburger-inner::after, header#header nav#navHeader .hamburger .hamburger-inner::before {
+    background: #212121;
+  }
+  header#header nav#navHeader > ul {
+    position: fixed;
+    top: 0;
+    right: -80px;
+    width: 80px;
+    height: 100vh;
+    margin-top: 60px;
+    transition: 300ms ease;
+  }
+  header#header nav#navHeader > ul > li {
+    margin: 0 !important;
+    position: relative;
+  }
+  header#header nav#navHeader > ul > li::after, header#header nav#navHeader > ul > li::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+  header#header nav#navHeader > ul > li::before {
+    border-width: 0 0 20px 80px;
+    bottom: 100%;
+  }
+  header#header nav#navHeader > ul > li::after {
+    border-width: 0 80px 20px 0;
+    top: 100%;
+  }
+  header#header nav#navHeader > ul > li.home.navItem0::before {
+    border-color: transparent transparent #f8be52 transparent;
+  }
+  header#header nav#navHeader > ul > li.home.navItem0::after {
+    border-color: transparent #f8be52 transparent transparent;
+  }
+  header#header nav#navHeader > ul > li.services.navItem1::before {
+    border-color: transparent transparent #8a97c6 transparent;
+  }
+  header#header nav#navHeader > ul > li.services.navItem1::after {
+    border-color: transparent #8a97c6 transparent transparent;
+  }
+  header#header nav#navHeader > ul > li.contact.navItem2::before {
+    border-color: transparent transparent #16559f transparent;
+  }
+  header#header nav#navHeader > ul > li.contact.navItem2::after {
+    border-color: transparent #16559f transparent transparent;
+  }
+  header#header nav#navHeader > ul > li a {
+    margin: 20px 0;
+  }
+  header#header nav#navHeader > ul > li .aLike {
+    margin: 40px 0;
+  }
+  header#header nav#navHeader > ul > li a, header#header nav#navHeader > ul > li .aLike {
+    padding: 30px 5px;
+  }
+  header#header nav#navHeader > ul > li.toggled {
+    transform: translateX(-220px);
+  }
+  header#header nav#navHeader > ul > li ul {
+    height: inherit;
+    width: 220px;
+    height: 125px;
+    margin-top: -20px;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background: #8a97c6;
+    border: none;
+    display: block;
+  }
+  header#header nav#navHeader > ul > li ul li a {
+    margin: 0;
+    padding: 5px 0;
+    height: 40px;
+    line-height: auto;
+  }
+  header#header nav#navHeader ul.is-active {
+    right: 0;
+  }
+}
+
 footer.footer {
   background-color: #8a97c6;
   color: #212121;
   padding-top: 20px;
   padding-bottom: 10px;
-  text-align: center; }
-  footer.footer ul {
-    list-style: none; }
-    footer.footer ul a {
-      text-decoration: none;
-      color: #212121; }
-  footer.footer > ul > li {
-    display: inline-block; }
+  text-align: center;
+}
+footer.footer ul {
+  list-style: none;
+}
+footer.footer ul a {
+  text-decoration: none;
+  color: #212121;
+}
+footer.footer > ul > li {
+  display: inline-block;
+}
 
 body {
   margin: 0;
-  color: #7fff00;
-  background: #191919;
-  font-family: 'Source Code Pro', Arial;
-  font-size: 14px; }
+  padding: 0;
+  background: #555555;
+  color: #212121;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+}
 
 .clearBoth {
-  clear: both; }
-
-div {
-  text-align: center; }
+  clear: both;
+}
 
 /*# sourceMappingURL=style.css.map */

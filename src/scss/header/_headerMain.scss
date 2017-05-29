@@ -1,0 +1,250 @@
+header#header{
+	background: #ffffff;
+	text-transform: uppercase;
+	height: 120px;
+	position: relative;
+
+	@media screen and (max-width: 920px) {
+		height: 60px;
+	}
+
+	a#logo{
+		padding: 20px 50px;
+		display: inline-block;
+		text-decoration: none;
+		color: $blue;
+
+		img{
+			width: 150px;
+			vertical-align: bottom;
+		}
+
+		div.logoTitle{
+			padding: 5px;
+			display: inline-block;
+			font-family: 'Libre Baskerville', serif;
+			font-size: 25px;
+			letter-spacing: 2px;
+
+			div{
+				padding: 2px;
+				border-top: 2px solid $blue;
+				font-size: 12px;
+				text-align: center;
+				letter-spacing: 5px;
+			}
+		}
+
+		@media screen and (max-width: 920px) {	
+			padding: 10px 25px;
+
+			img{
+				width: 75px;
+			}
+
+			div.logoTitle{
+				font-size: 15px;
+
+				div{
+					font-size: 7px;
+				}
+			}
+		}
+	}
+
+	nav#navHeader{
+		width: 50%;
+		margin-top: 30px;
+		float: right;
+		a{
+			text-decoration: none;
+			color: $textColor;
+		}
+
+		.aLike{
+			cursor: pointer;
+		}
+
+		ul{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		
+		&>ul{
+			.home.navItem0{
+				background: $yellow;
+				&:hover{
+					margin-left: -20px;
+				}
+			}
+			.services.navItem1{
+				background: $lightBlue;
+				margin-left: $stepX*1;
+				margin-top: $stepY;
+				&:hover{
+					margin-left: $stepX*1-20;
+				}
+			}
+			.contact.navItem2{
+				background: $blue;
+				a{color: #ffffff;}
+				margin-left: $stepX*2;
+				margin-top: $stepY;
+				&:hover{
+					margin-left: $stepX*2-20;
+				}
+			}
+
+			li{
+				transition: 300ms ease;
+				a, .aLike{
+					display: block;
+					height: inherit;
+					width: inherit;
+					padding: 10px 30px;
+					font-size: 16px;
+				}
+
+				.subMenuToggle{
+					display: block !important;
+				}
+
+				ul{
+					display: none;
+					border-top: thin solid $textColor;
+					width: 100vw;
+					background: #ffffff;
+					position: absolute;
+					top: 100%;
+					left: 0;
+					text-align: center;
+
+					li{
+						display: inline-block;
+						a{
+							display: inherit;
+							padding: 15px 25px;
+							font-size: 12px;
+
+							&:hover{
+								text-decoration: underline;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.hamburger{display: none;}
+
+		@media screen and (max-width: 920px) {
+			.hamburger{
+				display: block;
+				position: absolute;
+				top: 5px;
+				right: 5px;
+				.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before{
+					background: $textColor;
+				}
+			}
+			&>ul{
+				position: fixed;
+				top: 0;
+				right: -80px;
+				width: 80px;
+				height: 100vh;
+				margin-top: 60px;
+				transition: 300ms ease;
+				&>li{
+					margin: 0 !important;
+					position: relative;
+					&::after, &::before{
+						content:"";
+						position: absolute;
+						right: 0;
+						width: 0;
+						height: 0;
+						border-style: solid;
+					}
+
+					&::before{
+						border-width: 0 0 20px 80px;
+						bottom: 100%;
+					}
+
+					&::after{
+						border-width: 0 80px 20px 0;
+						top: 100%;
+					}
+
+					&.home.navItem0{
+						&::before{
+							border-color: transparent transparent $yellow transparent;
+						}
+						&::after{
+							border-color: transparent $yellow transparent transparent;
+						}
+					}
+					&.services.navItem1{
+						&::before{
+							border-color: transparent transparent $lightBlue transparent;
+						}
+						&::after{
+							border-color: transparent $lightBlue transparent transparent;
+						}
+					}
+					&.contact.navItem2{
+						&::before{
+							border-color: transparent transparent $blue transparent;
+						}
+						&::after{
+							border-color: transparent $blue transparent transparent;
+						}
+					}
+
+					a{
+						margin: 20px 0;
+					}
+
+					.aLike{
+						margin: 40px 0;
+					}
+
+					a, .aLike{
+						padding: 30px 5px;
+					}
+
+					&.toggled{
+						transform: translateX(-220px);
+					}
+
+					ul{
+						height: inherit;
+						width: 220px;
+						height: 125px;
+						margin-top: -20px;
+						position: absolute;
+						left: 100%;
+						top: 0;
+						background: $lightBlue;
+						border: none;
+						display: block;
+						li{
+							a{
+								margin: 0;
+								padding: 5px 0;
+								height: 40px;
+								line-height: auto;
+							}
+						}
+					}
+				}
+			}
+
+			ul.is-active{
+				right: 0;
+			}
+		}
+	}
+}
