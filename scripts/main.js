@@ -1,7 +1,18 @@
-console.log("StartUp");
+var subMenuHolder = $(".subMenuHolder");
+var nav = $("nav#navHeader>ul");
+var burger = $(".hamburger");
 
-$(document).ready(function(){
+subMenuHolder.on(
+	"click",
+	function() {
+		$(this).find("ul").toggleClass("subMenuToggle");
+		$(this).toggleClass("toggled");
+});
 
-// some code...
-
+burger.on(
+	"click",
+	function() {
+		burger.toggleClass("is-active");
+		nav.toggleClass("is-active");
+		$(".subMenuToggle").removeClass("subMenuToggle");
 });
