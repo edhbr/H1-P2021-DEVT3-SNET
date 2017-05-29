@@ -13,6 +13,9 @@
   
   <?php include("views/footer/footer.php") ?>
   <!-- scripts -->
+  <script src="scripts/vendor/jquery.js"></script>
+  <script src="scripts/vendor/what-input.js"></script>
+  <script src="scripts/vendor/foundation.min.js"></script>
   <script type="text/javascript" src="scripts/main.js"></script>
 </body>
 </html>
