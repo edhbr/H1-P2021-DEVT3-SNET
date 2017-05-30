@@ -236,24 +236,45 @@ footer.footer > ul > li {
   display: inline-block;
 }
 
+main.contact {
+  background: url("../images/contact.jpg");
+  background-size: cover;
+  padding: 120px 0;
+}
+
 .contactForm {
-  margin-top: 120px;
-  margin-bottom: 120px;
   border-radius: 5px;
   background: #e6e6e6;
 }
-.contactForm header#formHeader {
+.contactForm header.formHeader {
   text-align: center;
   margin: 10px 30px 60px 30px;
   border-bottom: 2px solid #212121;
 }
-.contactForm header#formHeader h1 {
+.contactForm header.formHeader h1 {
   font-size: 40px;
   text-transform: uppercase;
   font-weight: bold;
 }
-.contactForm header#formHeader p {
+.contactForm header.formHeader p {
   text-align: left;
+}
+.contactForm footer.formFooter {
+  margin: 40px;
+  padding-top: 30px;
+  text-align: center;
+  border-top: 2px solid #212121;
+}
+.contactForm footer.formFooter input {
+  padding: 15px 40px;
+  border-radius: 5px;
+  background: #8a97c6;
+  cursor: pointer;
+  border: none;
+}
+.contactForm footer.formFooter input:hover {
+  background: #16559f;
+  color: #ffffff;
 }
 
 body {
