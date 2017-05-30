@@ -13,9 +13,9 @@
 </head>
 <body>
   <?php include("../views/header/header.php"); ?>
-  <main>
+  <main class="contact">
     <form action="page/merci.php" method="post" class="row contactForm">
-      <header id="formHeader">
+      <header class="formHeader">
         <h1>Devis gratuit</h1>
         <p>N'hésitez pas à envoyer une demande de devis à notre équipe commerciale, elle vous recontactera au plus vite !</p>
         <p>Les champs marqués du symbole * sont obligatoires</p>
@@ -40,9 +40,9 @@
       </div>
       <div class="small-12 medium-6 columns">
         <label for="message">Message *:</label>
-        <textarea id="message" name="message" rows="8"></textarea>
+        <textarea id="message" name="message" rows="8" placeholder="Votre message..."></textarea>
       </div>
-      <div class="small-12 columns">
+      <footer class="formFooter clearBoth">
         <input type="submit">
       </div>
     </form>
