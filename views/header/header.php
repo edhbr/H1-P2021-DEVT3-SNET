@@ -13,18 +13,18 @@
       </span>
     </button>
 		<ul>
-			<li class="home navItem0">
+			<li class="home navItem0 yellow">
 				<a href="index.php">Accueil</a>
 			</li>
-			<li class="services navItem1 subMenuHolder">
+			<li class="services navItem1 subMenuHolder lightBlue">
 				<span class="aLike">Services</span>
 				<ul class="jsNeeded">
-					<li><a href="#">Locaux Professionnels</a></li>
-					<li><a href="#">Copropriété - Commun d'Immeuble</a></li>
-					<li><a href="#">Services Ponctuels</a></li>
+					<li><a href="pages/pro.php">Locaux Professionnels</a></li>
+					<li><a href="pages/copro.php">Copropriété - Commun d'Immeuble</a></li>
+					<li><a href="pages/ponctu.php">Services Ponctuels</a></li>
 				</ul>
 			</li>
-			<li class="contact navItem2">
+			<li class="contact navItem2 blue">
 				<a href="pages/contact.php">Contact</a>
 			</li>
 		</ul>
