@@ -10,8 +10,12 @@ footer.footer{
     a{
       text-decoration: none;
       color: #212121;
+      &:hover{
+        text-decoration: underline;
+      }
     }
   }
+  
   &>ul>li{
     display: inline-block;    
   }
