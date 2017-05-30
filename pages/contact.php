@@ -82,13 +82,13 @@
         <input id="companyName" type="text" name="companyName" placeholder="Votre nom de société">
         <label for="email">E-mail *:</label>
         <input id="email" type="email" name="email" placeholder="Votre e-mail" required>
-        <label for="phone">N° de téléphone *:</label>
-        <input id="phone" type="tel" name="phone" placeholder="Votre N° de téléphone" required>
+        <label for="phone">N° de téléphone :</label>
+        <input id="phone" type="tel" name="phone" placeholder="Votre N° de téléphone">
         <label for="services">Service *:</label>
         <select id="services" name="services" required>
-          <option value="pro">Locaux Professionnels</option>
-          <option value="copro">Copropriété - Commun d'Immeuble</option>
-          <option value="ponctu">Services Ponctuels</option>
+          <option value="Locaux Professionnels">Locaux Professionnels</option>
+          <option value="Copropriété - Commun d'Immeuble">Copropriété - Commun d'Immeuble</option>
+          <option value="Services Ponctuels">Services Ponctuels</option>
         </select>
       </div>
       <div class="small-12 medium-6 columns">
