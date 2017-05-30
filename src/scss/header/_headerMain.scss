@@ -3,6 +3,7 @@ header#header{
 	text-transform: uppercase;
 	height: 120px;
 	position: relative;
+	border-bottom: thin solid $textColor;
 
 	@media screen and (max-width: 920px) {
 		height: 60px;
@@ -73,13 +74,11 @@ header#header{
 		
 		&>ul{
 			.home.navItem0{
-				background: $yellow;
 				&:hover{
 					margin-left: -20px;
 				}
 			}
 			.services.navItem1{
-				background: $lightBlue;
 				margin-left: $stepX*1;
 				margin-top: $stepY;
 				&:hover{
@@ -87,7 +86,6 @@ header#header{
 				}
 			}
 			.contact.navItem2{
-				background: $blue;
 				a{color: #ffffff;}
 				margin-left: $stepX*2;
 				margin-top: $stepY;
@@ -112,11 +110,10 @@ header#header{
 
 				ul{
 					display: none;
-					border-top: thin solid $textColor;
 					width: 100vw;
 					background: #ffffff;
 					position: absolute;
-					top: 100%;
+					top: 100.5%;
 					left: 0;
 					text-align: center;
 

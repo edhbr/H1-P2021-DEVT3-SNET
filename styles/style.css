@@ -1,8 +1,10 @@
+@charset "UTF-8";
 header#header {
   background: #ffffff;
   text-transform: uppercase;
   height: 120px;
   position: relative;
+  border-bottom: thin solid #212121;
 }
 @media screen and (max-width: 920px) {
   header#header {
@@ -64,14 +66,10 @@ header#header nav#navHeader ul {
   padding: 0;
   margin: 0;
 }
-header#header nav#navHeader > ul .home.navItem0 {
-  background: #f8be52;
-}
 header#header nav#navHeader > ul .home.navItem0:hover {
   margin-left: -20px;
 }
 header#header nav#navHeader > ul .services.navItem1 {
-  background: #8a97c6;
   margin-left: 150px;
   margin-top: -30px;
 }
@@ -79,7 +77,6 @@ header#header nav#navHeader > ul .services.navItem1:hover {
   margin-left: 130px;
 }
 header#header nav#navHeader > ul .contact.navItem2 {
-  background: #16559f;
   margin-left: 300px;
   margin-top: -30px;
 }
@@ -104,11 +101,10 @@ header#header nav#navHeader > ul li .subMenuToggle {
 }
 header#header nav#navHeader > ul li ul {
   display: none;
-  border-top: thin solid #212121;
   width: 100vw;
   background: #ffffff;
   position: absolute;
-  top: 100%;
+  top: 100.5%;
   left: 0;
   text-align: center;
 }
@@ -295,16 +291,110 @@ main.contact {
   background: #8a97c6;
   cursor: pointer;
   border: none;
+  transition: 300ms ease;
 }
 .contactForm footer.formFooter input:hover {
   background: #16559f;
   color: #ffffff;
 }
 
+main.services {
+  padding-bottom: 30px;
+}
+main.services h1, main.services h2 {
+  text-align: center;
+  font-family: inherit;
+}
+main.services h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 50px 0;
+}
+main.services h2 {
+  font-size: 30px;
+  margin: 10px;
+}
+main.services ul {
+  list-style: none;
+  padding: 0;
+  margin: 60px 0;
+}
+main.services ul li {
+  padding-left: 1em;
+  margin-bottom: 10px;
+}
+main.services ul li::before {
+  content: "• ";
+  font-size: 60px;
+  color: white;
+  line-height: 0;
+  vertical-align: middle;
+}
+main.services div.centerWrapper {
+  text-align: center;
+  padding: 30px 0;
+}
+main.services div.centerWrapper a {
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: thin solid #212121;
+  color: #212121;
+  text-decoration: none;
+  transition: 300ms ease;
+  background: #8a97c6;
+}
+main.services div.centerWrapper a.blue {
+  border: thin solid #ffffff;
+}
+main.services div.centerWrapper a img {
+  height: 50px;
+  vertical-align: middle;
+}
+main.services div.centerWrapper a:hover {
+  background: #ffffff;
+}
+main.services div.servicesSlider {
+  animation: bgSwitch ease 9s infinite;
+  background-size: auto 100%;
+}
+main.services div.servicesSlider.copro {
+  background: url("../images/copro.png");
+}
+main.services div.servicesSlider.pro {
+  background: url("../images/pro.png");
+}
+main.services div.servicesSlider.ponctu {
+  background: url("../images/ponctu.png");
+}
+
+@keyframes bgSwitch {
+  0% {
+    background-position: 0px 100%;
+  }
+  30% {
+    background-position: 0px 100%;
+  }
+  33% {
+    background-position: 1125px 100%;
+  }
+  63% {
+    background-position: 1125px 100%;
+  }
+  66% {
+    background-position: 2250px 100%;
+  }
+  97% {
+    background-position: 2250px 100%;
+  }
+  100% {
+    background-position: 3375px 100%;
+  }
+}
 body {
   margin: 0;
   padding: 0;
-  background: #555555;
+  background: #ffffff;
   color: #212121;
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
@@ -312,6 +402,21 @@ body {
 
 .clearBoth {
   clear: both;
+}
+
+.yellow {
+  background: #f8be52;
+  color: #212121;
+}
+
+.lightBlue {
+  background: #8a97c6;
+  color: #212121;
+}
+
+.blue {
+  background: #16559f;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
