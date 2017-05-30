@@ -1,0 +1,22 @@
+.contactForm{
+	margin-top: 120px;
+	margin-bottom: 120px;
+	border-radius: 5px;
+	background: #e6e6e6;
+
+	header#formHeader{
+		text-align: center;
+		margin: 10px 30px 60px 30px;
+		border-bottom: 2px solid $textColor;
+
+		h1{
+			font-size: 40px;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+
+		p{
+			text-align: left;
+		}
+	}
+}
