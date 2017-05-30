@@ -56,6 +56,7 @@ main.contact{
 			background: $lightBlue;
 			cursor: pointer;
 			border: none;
+			transition: 300ms ease;
 
 			&:hover{
 				background: $blue;
