@@ -51,12 +51,12 @@
             <h4>Prendre contact</h4>
             <p>Demandez un devis de nettoyage gratuitement et sans engagement.</p>
           </div>
-          <div class="small-12 medium-6 columns">
+          <button class="small-12 medium-6 columns">
             <a href="#" alt="devisButton">
               <span>Obtenir un devis</span>
               <img src="images/devis.png" alt="devis" />
             </a>
-          </div>
+          </button>
         </div>
       </section>
     </main>
