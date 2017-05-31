@@ -173,7 +173,10 @@ main {
   main section.head {
     background-image: url(../images/headerIndex.jpg);
     background-size: cover;
-    height: 100vh; }
+    background-position: 50% -20vh;
+    height: 100%; }
+    main section.head .darker {
+      background-color: rgba(0, 0, 0, 0.2); }
     main section.head h1 {
       font-family: 'Libre Baskerville', serif;
       text-transform: uppercase;
@@ -182,7 +185,8 @@ main {
       width: 575px;
       margin: 0 auto;
       padding-top: 200px;
-      border-bottom: 3px solid; }
+      border-bottom: 3px solid;
+      text-shadow: 2px 2px 10px black; }
     main section.head h2 {
       font-family: 'Libre Baskerville', serif;
       text-transform: uppercase;
@@ -190,33 +194,43 @@ main {
       font-weight: lighter;
       letter-spacing: 35px;
       padding-left: 30px;
-      margin-bottom: 300px; }
+      margin-bottom: 10vh;
+      text-shadow: 2px 2px 10px black; }
     main section.head p {
       background-color: rgba(0, 0, 0, 0.6);
-      padding: 20px 36vw; }
+      padding: 20px 25vw; }
   main section.services {
     background-color: #16559f;
-    padding-top: 10px; }
+    padding-top: 10px;
+    padding-bottom: 30px; }
     main section.services h3 {
       font-size: 40px;
       text-transform: uppercase; }
     main section.services div.imagesServices div {
-      position: relative; }
-    main section.services div.imagesServices img {
-      width: 20vw;
-      height: 20vh;
-      margin: 40px 30px; }
-    main section.services div.imagesServices p {
-      text-transform: uppercase;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); }
+      position: relative;
+      margin-bottom: 20px;
+      background-color: #000000; }
+      main section.services div.imagesServices div a {
+        display: inline-block; }
+        main section.services div.imagesServices div a img {
+          width: 100%;
+          height: 100%;
+          opacity: 0.6; }
+        main section.services div.imagesServices div a p {
+          text-transform: uppercase;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-shadow: 2px 2px 10px black;
+          font-size: 16px;
+          text-decoration: none;
+          color: #ffffff; }
   main section.contact {
     background-color: #ffffff;
     color: #000000;
-    padding-top: 10px;
-    padding-bottom: 20px; }
+    padding-top: 40px;
+    padding-bottom: 50px; }
     main section.contact h4 {
       font-size: 30px;
       text-transform: uppercase; }
@@ -226,13 +240,15 @@ main {
       color: #000000;
       padding-left: 10px;
       border: 1px solid;
-      border-radius: 5%; }
-      main section.contact a span {
-        display: inline-block;
-        transform: translateY(-30px); }
+      border-radius: 10px;
+      transition: 0.3s all linear;
+      background-color: #f8be52; }
+      main section.contact a:hover {
+        background-color: #ffffff; }
       main section.contact a img {
-        width: 80px;
-        height: 80px; }
+        width: 40px;
+        height: 40px;
+        vertical-align: middle; }
 
 footer.footer {
   background-color: #8a97c6;
