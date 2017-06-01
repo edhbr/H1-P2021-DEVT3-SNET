@@ -49,7 +49,7 @@
         $message = htmlspecialchars(addslashes($_POST["message"]));
 
 
-        $mail->Subject = 'Demande de devis'.$firstName.' '.$lastName;
+        $mail->Subject = 'Demande de devis '.$firstName.' '.$lastName;
         $mail->Body    =
         '<strong>Nom : </strong><br/>'.$lastName.'<br/>
         <strong>Prénom : </strong><br/>'.$firstName.'<br/>
