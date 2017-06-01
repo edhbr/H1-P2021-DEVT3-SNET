@@ -26,13 +26,13 @@
         $mail->isSMTP();                                      // Set mailer to use SMTP
         $mail->Host = 'SSL0.OVH.NET';  // Specify main and backup SMTP servers
         $mail->SMTPAuth = true;                               // Enable SMTP authentication
-        $mail->Username = 'contact@edhbr.fr';                 // SMTP username
-        $mail->Password = 'contact123';                       // SMTP password
+        $mail->Username = 'contact@stairnetnettoyage.fr';                 // SMTP username
+        $mail->Password = '032512ccmc';                       // SMTP password
         $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
         $mail->Port = 465;                                    // TCP port to connect to
 
-        $mail->setFrom('contact@edhbr.fr');
-        $mail->addAddress('edouard.haberer+test1@gmail.com');     // Add a recipient
+        $mail->setFrom('contact@stairnetnettoyage.fr');
+        $mail->addAddress('edouard.haberer+sn@gmail.com');     // Add a recipient
 
         $mail->isHTML(true);                                  // Set email format to HTML
 
