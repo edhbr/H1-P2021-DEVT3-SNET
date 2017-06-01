@@ -240,7 +240,6 @@ footer.footer > ul > li {
   display: inline-block;
 }
 
-
 main#index {
   color: #ffffff;
   text-align: center;
@@ -371,6 +370,7 @@ main#index section.contact a img {
   height: 40px;
   vertical-align: middle;
 }
+
 main.contact {
   background: url("../images/contact.jpg");
   background-size: cover;
