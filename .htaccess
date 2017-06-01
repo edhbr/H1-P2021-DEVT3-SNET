@@ -1,0 +1,5 @@
+Options -Indexes
+#You may need to disable the 3 following lines if your site don't have ssl (https) certificate
+#RewriteEngine On
+#RewriteCond %{HTTPS} off
+#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
