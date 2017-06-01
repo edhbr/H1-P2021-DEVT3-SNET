@@ -13,7 +13,7 @@
   </head>
   <body>
     <?php include("views/header/header.php") ?>
-    <main>
+    <main id="index">
       <section class="head">
         <div class="darker">
           <h1>Stairnet</h1>
