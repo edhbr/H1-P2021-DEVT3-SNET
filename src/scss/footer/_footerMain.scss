@@ -11,6 +11,9 @@ footer.footer{
     a{
       text-decoration: none;
       color: #212121;
+      &:hover{
+        text-decoration: underline;
+      }
     }
     
     li.title{

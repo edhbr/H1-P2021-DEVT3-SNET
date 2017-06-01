@@ -2,11 +2,13 @@
 @import "header/_headerMain.scss";
 @import "index/_indexMain.scss";
 @import "footer/_footerMain.scss";
+@import "contact/_contact.scss";
+@import "services/_services.scss";
 
 body{
 	margin: 0;
 	padding: 0;
-	background: #555555;
+	background: #ffffff;
 	color: $textColor;
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
@@ -14,4 +16,17 @@ body{
 
 .clearBoth{
 	clear: both;
+}
+
+.yellow{
+	background: $yellow;
+	color: $textColor;
+}
+.lightBlue{
+	background: $lightBlue;
+	color: $textColor;
+}
+.blue{
+	background: $blue;
+	color: #ffffff;
 }
