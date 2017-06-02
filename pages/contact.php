@@ -97,7 +97,7 @@
       </div>
       <footer class="formFooter clearBoth">
         <input type="submit">
-      </div>
+      </footer>
     </form>
   </main>
   <?php include("../views/footer/footer.php"); ?>
