@@ -113,7 +113,9 @@ header#header{
 					width: 100vw;
 					background: #ffffff;
 					position: absolute;
-					top: 100.5%;
+					top: 100%;
+					border-bottom: thin solid $textColor;
+					border-top: thin solid $textColor;
 					left: 0;
 					text-align: center;
 

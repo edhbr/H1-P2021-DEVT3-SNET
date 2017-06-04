@@ -24,7 +24,7 @@
         <li>Tarif applicable après examen sur site. </li>
       </ul>
       <div class="centerWrapper">
-        <a href="pages/contact.php">Obtenir un devis<img src="images/devis.png" alt="Icon file"></a>
+        <a class="toContact" href="pages/contact.php">Obtenir un devis<img src="images/devis.png" alt="Icon file"></a>
       </div>
     </div>
   </main>

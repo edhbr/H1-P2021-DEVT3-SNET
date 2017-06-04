@@ -20,11 +20,11 @@
       <h2>Nos formules :</h2>
       <ul>
         <li>Pour que vos locaux soient entretenus, profitez de nos forfaits à partir de 185.00 euro* TTC par mois. </li>
-        <li>Prix applicable pour un bureau de 50/100 m2 pour 1h30 d'entretien par passage hors vitrerie, matériel, produit et consommables fournis par le client.</li>
+        <li>Prix à partir de, comprenant un passage d’entretien hebdomadaire, balayage de l’escalier, porte, rampe, plinthes, balayage et nettoyage humide de l’entrée – 50 m2, sortie des poubelles 6/7 jours hors jours fériés, un container par couleur, sans relamping , cuivre carreaux</li>
         <li>Tarif applicable après examen sur site. </li>
       </ul>
       <div class="centerWrapper">
-        <a href="pages/contact.php">Obtenir un devis<img src="images/devis.png" alt="Icon file"></a>
+        <a class="toContact" href="pages/contact.php">Obtenir un devis<img src="images/devis.png" alt="Icon file"></a>
       </div>
     </div>
   </main>
