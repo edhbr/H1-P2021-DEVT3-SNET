@@ -5,3 +5,4 @@ Allow: /pages/copro.php
 Allow: /pages/ponctu.php
 Allow: /pages/contact.php
 Disallow: /pages/mentions.php
+Sitemap: https://www.stairnetnettoyage.fr/sitemap.xml
