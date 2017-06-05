@@ -97,6 +97,7 @@ header#header nav#navHeader > ul li a, header#header nav#navHeader > ul li .aLik
 }
 header#header nav#navHeader > ul li .subMenuToggle {
   display: block !important;
+  z-index: 10;
 }
 header#header nav#navHeader > ul li ul {
   display: none;
