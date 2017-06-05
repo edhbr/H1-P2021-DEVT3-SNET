@@ -106,7 +106,6 @@ header#header{
 
 				.subMenuToggle{
 					display: block !important;
-					z-index: 10;
 				}
 
 				ul{
@@ -115,6 +114,7 @@ header#header{
 					background: #ffffff;
 					position: absolute;
 					top: 100%;
+					z-index: 10 !important;
 					border-bottom: thin solid $textColor;
 					border-top: thin solid $textColor;
 					left: 0;

@@ -97,7 +97,6 @@ header#header nav#navHeader > ul li a, header#header nav#navHeader > ul li .aLik
 }
 header#header nav#navHeader > ul li .subMenuToggle {
   display: block !important;
-  z-index: 10;
 }
 header#header nav#navHeader > ul li ul {
   display: none;
@@ -105,6 +104,7 @@ header#header nav#navHeader > ul li ul {
   background: #ffffff;
   position: absolute;
   top: 100%;
+  z-index: 10 !important;
   border-bottom: thin solid #212121;
   border-top: thin solid #212121;
   left: 0;
