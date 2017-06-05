@@ -7,7 +7,7 @@
   <title>Stairnet - Services</title>
   <link rel="icon" type="image/icon" href="images/favicon.ico" />
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville%7COpen+Sans" rel="stylesheet"> 
   <link rel="stylesheet" href="styles/hamburgers.min.css" />
   <link rel="stylesheet" href="styles/foundation.min.css" />
   <link rel="stylesheet" href="styles/style.css" />
