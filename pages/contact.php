@@ -34,7 +34,7 @@
         $mail->Port = 465;                                    // TCP port to connect to
 
         $mail->setFrom('contact@stairnetnettoyage.fr');
-        $mail->addAddress('edouard.haberer+sn@gmail.com');     // Add a recipient
+        $mail->addAddress('stairnet@wanadoo.fr');     // Add a recipient
 
         $mail->isHTML(true);                                  // Set email format to HTML
 
