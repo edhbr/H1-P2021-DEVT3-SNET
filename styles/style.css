@@ -546,6 +546,34 @@ main.services div.servicesSlider.ponctu {
     background-position: 3375px 100%;
   }
 }
+main.mentions {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+main.mentions h1, main.mentions h2 {
+  color: #212121;
+  font-family: inherit;
+}
+main.mentions h1 {
+  text-align: center;
+  font-size: 40px;
+}
+main.mentions h2 {
+  font-size: 30px;
+}
+main.mentions a {
+  color: inherit;
+  text-decoration: underline;
+}
+main.mentions a:hover {
+  text-decoration: none;
+}
+main.mentions p {
+  margin-left: 15px;
+  text-align: justify;
+  font-size: 12px;
+}
+
 body {
   margin: 0;
   padding: 0;
