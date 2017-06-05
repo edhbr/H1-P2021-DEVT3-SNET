@@ -46,7 +46,11 @@
           $companyName = "/";
         }
         $email = htmlspecialchars(addslashes($_POST["email"]));
-        $phone = htmlspecialchars(addslashes($_POST["phone"]));
+        if(isset($_POST["phone"])) {
+          $phone = htmlspecialchars(addslashes($_POST["phone"]));
+        } else {
+          $phone = "/";
+        }
         $services = htmlspecialchars(addslashes($_POST["services"]));
         $message = htmlspecialchars(addslashes($_POST["message"]));
 
