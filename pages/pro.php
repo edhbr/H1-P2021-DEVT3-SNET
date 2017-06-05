@@ -21,7 +21,7 @@
     <div class="pDesc blue small-12 medium-7 columns" data-equalizer-watch>
       <h2>Nos formules :</h2>
       <ul>
-        <li>Pour que vos locaux soient entretenus, profitez de nos forfaits à partir de 185.00 euro* TTC par mois. </li>
+        <li>Pour que vos locaux soient entretenus, profitez de nos forfaits à partir de 185.00 euros* TTC par mois. </li>
         <li>Prix applicable pour un bureau de 50/100 m2 pour 1h30 d'entretien par passage hors vitrerie, matériel, produit et consommables fournis par le client.</li>
         <li>Tarif applicable après examen sur site. </li>
       </ul>

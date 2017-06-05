@@ -21,7 +21,7 @@
     <div class="pDesc yellow small-12 medium-7 columns" data-equalizer-watch>
       <h2>Nos formules :</h2>
       <ul>
-        <li>Pour que vos locaux soient entretenus, profitez de nos forfaits à partir de 185.00 euro* TTC par mois. </li>
+        <li>Pour que vos locaux soient entretenus, profitez de nos forfaits à partir de 185.00 euros* TTC par mois. </li>
         <li>Prix à partir de, comprenant un passage d’entretien hebdomadaire, balayage de l’escalier, porte, rampe, plinthes, balayage et nettoyage humide de l’entrée – 50 m2, sortie des poubelles 6/7 jours hors jours fériés, un container par couleur, sans relamping , cuivre carreaux</li>
         <li>Tarif applicable après examen sur site. </li>
       </ul>
