@@ -148,7 +148,7 @@ header#header{
 				}
 			}
 			&>ul{
-				position: fixed;
+				position: absolute;
 				top: 0;
 				right: -80px;
 				z-index: 10;
