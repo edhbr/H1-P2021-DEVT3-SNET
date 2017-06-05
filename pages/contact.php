@@ -16,7 +16,7 @@
 <body>
   <?php include("../views/header/header.php"); ?>
   <main class="contact">
-    <form action="pages/contact.php?thanks='success'"" method="post" class="row contactForm">
+    <form action="pages/contact.php?thanks='success'" method="post" class="row contactForm">
     <?php 
       if (isset($_GET["thanks"])) {    
         require '../views/phpmailer/PHPMailerAutoload.php';
