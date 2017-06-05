@@ -87,7 +87,7 @@
         <label for="phone">N° de téléphone :</label>
         <input id="phone" type="tel" name="phone" placeholder="Votre N° de téléphone">
         <label for="services">Service *:</label>
-        <select id="services" name="services" required>
+        <select id="services" name="services">
           <option value="Locaux Professionnels">Locaux Professionnels</option>
           <option value="Copropriété - Commun d'Immeuble">Copropriété - Commun d'Immeuble</option>
           <option value="Services Ponctuels">Services Ponctuels</option>
