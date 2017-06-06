@@ -2,16 +2,21 @@
 @import "header/_headerMain.scss";
 @import "footer/_footerMain.scss";
 @import "index/_indexMain.scss";
+@import "index/_indexAnim.scss";
 @import "contact/_contact.scss";
 @import "services/_services.scss";
+@import "mentions/_mentions.scss";
+
+html, body{
+	overflow-x: hidden !important;
+}
 
 body{
 	margin: 0;
 	padding: 0;
 	background: #ffffff;
 	color: $textColor;
-  font-family: 'Open Sans', sans-serif;
-  overflow-x: hidden;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .clearBoth{
@@ -29,4 +34,27 @@ body{
 .blue{
 	background: $blue;
 	color: #ffffff;
+}
+
+a.toContact{
+	display: inline-block;
+	padding: 2px 0 0 20px;
+	border-radius: 5px;
+	border: thin solid $textColor;
+	color: $textColor;
+	text-decoration: none;
+	transition: 300ms ease;
+	background: $lightBlue;
+	&.blue{
+		border: thin solid #ffffff;
+	}
+
+	img{
+		height: 40px;
+		vertical-align: middle;
+	}
+
+	&:hover{
+		background: #ffffff !important;
+	}
 }

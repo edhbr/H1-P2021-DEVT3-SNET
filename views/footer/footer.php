@@ -19,7 +19,7 @@
     <li class="small-12 medium-4 columns">
       <ul>
         <li class="title">Autres</li>
-        <li><a href="#" title="mentions_legales">Mentions légales</a></li>
+        <li><a href="pages/mentions.php" title="mentions_legales">Mentions légales</a></li>
         <li>© Copyright</li>
         <li>All Rights Reserved 2017</li>
       </ul>

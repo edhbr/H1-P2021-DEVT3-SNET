@@ -1,5 +1,5 @@
 <header id="header">
-	<a href="index.php" id="logo">
+	<a href="" id="logo">
 		<img src="images/stairnetLogo.svg" alt="Stairnet Logo">
 		<div class="logoTitle">
 			Stairnet
@@ -14,7 +14,7 @@
     </button>
 		<ul>
 			<li class="home navItem0 yellow">
-				<a href="index.php">Accueil</a>
+				<a href="">Accueil</a>
 			</li>
 			<li class="services navItem1 subMenuHolder lightBlue">
 				<span class="aLike">Services</span>

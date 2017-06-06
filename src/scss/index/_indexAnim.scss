@@ -1,0 +1,17 @@
+main#index section.head div.darker{
+	h1{
+		animation: comeLeft 500ms ease;
+	}
+	h2{
+		animation: comeRight 500ms ease;
+	}
+}
+
+@keyframes comeLeft {
+	  0%   {transform: translate(-80vw, 0);}
+    80%  {transform: translate(0, 0);}
+}
+@keyframes comeRight {
+	  0%   {transform: translate(80vw, 0);}
+    80%  {transform: translate(0, 0);}
+}

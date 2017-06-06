@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <base href="../" />
   <title>Stairnet - Accueil</title>
-  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans" rel="stylesheet"> 
+  <link rel="icon" type="image/icon" href="images/favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville%7COpen+Sans" rel="stylesheet"> 
   <link rel="stylesheet" href="styles/hamburgers.min.css" />
   <link rel="stylesheet" href="styles/foundation.min.css" />
   <link rel="stylesheet" href="styles/style.css" />
@@ -14,7 +16,7 @@
 <body>
   <?php include("../views/header/header.php"); ?>
   <main class="contact">
-    <form action="pages/contact.php?thanks='success'"" method="post" class="row contactForm">
+    <form action="pages/contact.php?thanks='success'" method="post" class="row contactForm">
     <?php 
       if (isset($_GET["thanks"])) {    
         require '../views/phpmailer/PHPMailerAutoload.php';
@@ -32,7 +34,7 @@
         $mail->Port = 465;                                    // TCP port to connect to
 
         $mail->setFrom('contact@stairnetnettoyage.fr');
-        $mail->addAddress('edouard.haberer+sn@gmail.com');     // Add a recipient
+        $mail->addAddress('stairnet@wanadoo.fr');     // Add a recipient
 
         $mail->isHTML(true);                                  // Set email format to HTML
 
@@ -44,7 +46,11 @@
           $companyName = "/";
         }
         $email = htmlspecialchars(addslashes($_POST["email"]));
-        $phone = htmlspecialchars(addslashes($_POST["phone"]));
+        if(isset($_POST["phone"])) {
+          $phone = htmlspecialchars(addslashes($_POST["phone"]));
+        } else {
+          $phone = "/";
+        }
         $services = htmlspecialchars(addslashes($_POST["services"]));
         $message = htmlspecialchars(addslashes($_POST["message"]));
 
@@ -85,7 +91,7 @@
         <label for="phone">N° de téléphone :</label>
         <input id="phone" type="tel" name="phone" placeholder="Votre N° de téléphone">
         <label for="services">Service *:</label>
-        <select id="services" name="services" required>
+        <select id="services" name="services">
           <option value="Locaux Professionnels">Locaux Professionnels</option>
           <option value="Copropriété - Commun d'Immeuble">Copropriété - Commun d'Immeuble</option>
           <option value="Services Ponctuels">Services Ponctuels</option>

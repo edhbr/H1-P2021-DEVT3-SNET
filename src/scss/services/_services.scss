@@ -26,10 +26,11 @@ main.services{
 			margin-bottom: 10px;
 
 			&::before {
-				content: "• ";
+				content: "- ";
 				font-size: 60px;
 				color: white;
 				line-height: 0;
+				color: inherit;
 				vertical-align: middle;
 			}
 		}
@@ -38,33 +39,12 @@ main.services{
 	div.centerWrapper{
 		text-align: center;
 		padding: 30px 0;
-		a{
-			display: inline-block;
-			padding: 10px 30px;
-			border-radius: 5px;
-			border: thin solid $textColor;
-			color: $textColor;
-			text-decoration: none;
-			transition: 300ms ease;
-			background: $lightBlue;
-			&.blue{
-				border: thin solid #ffffff;
-			}
-
-			img{
-				height: 50px;
-				vertical-align: middle;
-			}
-
-			&:hover{
-				background: #ffffff;
-			}
-		}
 	}
 
 	div.servicesSlider{
 		animation: bgSwitch ease 9s infinite;
 		background-size: auto 100%;
+		min-height: 400px;
 		&.copro{
 			background: url("../images/copro.png");
 		}
