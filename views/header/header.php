@@ -20,7 +20,7 @@
 				<span class="aLike">Services</span>
 				<ul class="jsNeeded">
 					<li><a href="pages/pro.php">Locaux Professionnels</a></li>
-					<li><a href="pages/copro.php">Copropriété - Commun d'Immeuble</a></li>
+					<li><a href="pages/copro.php">Commun d'Immeuble</a></li>
 					<li><a href="pages/ponctu.php">Services Ponctuels</a></li>
 				</ul>
 			</li>

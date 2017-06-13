@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="styles/hamburgers.min.css" />
   <link rel="stylesheet" href="styles/foundation.min.css" />
   <link rel="stylesheet" href="styles/style.css" />
-  <noscript><style>.jsNeeded{ display: block !important; }</style></noscript>
+  <style>.jsNeeded{ display: block !important; }</style>
 </head>
 <body>
   <?php include("../views/header/header.php"); ?>
@@ -21,9 +21,9 @@
     <div class="pDesc yellow small-12 medium-7 columns" data-equalizer-watch>
       <h2>Nos formules :</h2>
       <ul>
-        <li>Pour que vos locaux soient entretenus, profitez de nos forfaits à partir de 185.00 euros* TTC par mois. </li>
-        <li>Prix applicable pour un bureau de 50/100 m2 pour 1h30 d'entretien par passage hors vitrerie, matériel, produit et consommables fournis par le client.</li>
-        <li>Tarif applicable après examen sur site. </li>
+        <li>STAIRNET NETTOAYGE est également spécialisé dans le débarras de Cave, débarras d’appartement ou de locaux très sale et encombré de déchets, squats, ou encore suite au départ de locataires peu scrupuleux.</li>
+        <li>Notre mission est réaliser à l’issue d’un examen sur place.</li>
+        <li>Ce devis complet et <strong>gratuit</strong> pourra prendre éventuellement en compte d’éventuelles pièces ou meubles qui pourront être récupérés en pièces marchandes pour revente et déduits du prix de l’opération de mise en décharge</li>
       </ul>
       <div class="centerWrapper">
         <a class="toContact" href="pages/contact.php">Obtenir un devis<img src="images/devis.png" alt="Icon file"></a>

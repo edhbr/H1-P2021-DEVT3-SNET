@@ -12,8 +12,7 @@
       <ul>
         <li class="title">Nous contacter</li>
         <li>Tél: 01 53 73 12 79</li>
-        <li>Fax: 01 46 33 64 61</li>
-        <li>Email: stairnet@wanadoo.fr</li>
+        <li>Email: contact@stairnetnettoyage.fr</li>
       </ul>
     </li>
     <li class="small-12 medium-4 columns">

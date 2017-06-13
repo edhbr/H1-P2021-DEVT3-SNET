@@ -248,8 +248,8 @@ main#index {
 }
 main#index section.head {
   background-image: url(../images/headerIndex.jpg);
-  background-size: cover;
-  background-position: 50% 0;
+  background-size: 300vh;
+  background-position: 50% 0%;
   min-height: 90vh;
 }
 main#index section.head .darker {
@@ -391,26 +391,34 @@ main#index section.contact a.toContact {
 }
 
 main#index section.head div.darker h1 {
-  animation: comeLeft 500ms ease;
+  animation: comeLeft 1000ms ease;
 }
 main#index section.head div.darker h2 {
-  animation: comeRight 500ms ease;
+  animation: comeRight 1000ms ease;
 }
 
 @keyframes comeLeft {
   0% {
-    transform: translate(-80vw, 0);
+    transform: scale(0) translateY(300px);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
   }
   80% {
-    transform: translate(0, 0);
+    transform: scale(1) translateY(0px);
   }
 }
 @keyframes comeRight {
   0% {
-    transform: translate(80vw, 0);
+    transform: scale(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
   }
   80% {
-    transform: translate(0, 0);
+    transform: scale(1);
   }
 }
 main.contact {

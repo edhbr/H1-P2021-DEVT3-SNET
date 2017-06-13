@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="styles/hamburgers.min.css" />
   <link rel="stylesheet" href="styles/foundation.min.css" />
   <link rel="stylesheet" href="styles/style.css" />
-  <noscript><style>.jsNeeded{ display: block !important; }</style></noscript>
+  <style>.jsNeeded{ display: block !important; }</style>
 </head>
 <body>
   <?php include("../views/header/header.php"); ?>
@@ -28,13 +28,13 @@
         $mail->isSMTP();                                      // Set mailer to use SMTP
         $mail->Host = 'SSL0.OVH.NET';  // Specify main and backup SMTP servers
         $mail->SMTPAuth = true;                               // Enable SMTP authentication
-        $mail->Username = 'contact@stairnetnettoyage.fr';                 // SMTP username
-        $mail->Password = '032512ccmc';                       // SMTP password
+        $mail->Username = 'devis@stairnetnettoyage.fr';                 // SMTP username
+        $mail->Password = '032512ccmc032512ccmc032512ccmc';             // SMTP password
         $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
         $mail->Port = 465;                                    // TCP port to connect to
 
-        $mail->setFrom('contact@stairnetnettoyage.fr');
-        $mail->addAddress('stairnet@wanadoo.fr');     // Add a recipient
+        $mail->setFrom('devis@stairnetnettoyage.fr');
+        $mail->addAddress('contact@stairnetnettoyage.fr');     // Add a recipient
 
         $mail->isHTML(true);                                  // Set email format to HTML
 
@@ -53,6 +53,7 @@
         }
         $services = htmlspecialchars(addslashes($_POST["services"]));
         $message = htmlspecialchars(addslashes($_POST["message"]));
+        $mail->CharSet = 'UTF-8';
 
 
         $mail->Subject = 'Demande de devis '.$firstName.' '.$lastName;
@@ -63,7 +64,8 @@
         <strong>E-mail : </strong><br/>'.$email.'<br/>
         <strong>N° de téléphone : </strong><br/>'.$phone.'<br/>
         <strong>Service concerné : </strong><br/>'.$services.'<br/>
-        <strong>Message : </strong><br/>'.$message.'<br/>'
+        <strong>Message : </strong><br/>'.$message.'<br/><br/><br/>
+        <em>Merci de ne pas répondre à ce message, l\'adresse email derrière est gérée par un robot.</em>'
         ;
 
         if(!$mail->send()) {

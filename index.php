@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="styles/hamburgers.min.css" />
   <link rel="stylesheet" href="styles/foundation.min.css" />
   <link rel="stylesheet" href="styles/style.css" />
-  <noscript><style>.jsNeeded{ display: block !important; }</style></noscript>
+  <style>.jsNeeded{ display: block !important; }</style>
 </head>
 <body>
   <?php include("views/header/header.php") ?>
